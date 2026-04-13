@@ -1,10 +1,14 @@
-## Assignment 2 - Mid-term Game: Potionary, A Crafting Puzzle Game
+## Assignment 3 - Final Game: Potionary, A Crafting Puzzle Game
 
 ---
 
 ## Group Number
 
 5B
+Aliza Lallani - 21035348
+Andreea McKague
+Mia Krzysztalowicz
+Nelly Gogohounga
 
 ---
 
@@ -14,7 +18,9 @@ Potionary is a potion-crafting puzzle game where players fulfill customer orders
 
 - In the first level, players must add vials to a cauldron in the correct order to succeed. A "Customer Patience" timer begins immediately, requiring players to carefully balance speed with accuracy.
 
-- In the second level, a mixing mechanic is introduced. In addition to adding vials to the cauldron, players must
+- In the second level, a mixing mechanic is introduced. In addition to adding vials to the cauldron, players must mix at the correct point in the recipe.
+
+- In the final level, lights go out! Players must use candlelight to view the recipe.
 
 The game is designed to foster empathy and understanding for individuals with dyslexia. For someone with dyslexia, reading can feel like decoding words in a foreign language - slow, effortful, and mentally exhausting. Even short periods of reading demand intense concentration. Potionary mirrors these experiences through symbols that are visually similar, a challenging-to-read font, and a recipe design that is intentionally difficult to interpret.
 
@@ -28,8 +34,9 @@ The design is inspired by the artistic, hand-drawn, medieval art style of Potion
 
 - How to Start: Players view the "Aclhemist's Handbook" for instructions. They then on click "New Game" on the start screen and proceed to level one by clicking on "Level 1: Beginner's Luck" on the level map.
 - Controls: View orders by clicking on the envelope icon. Click on the recipe book to view the order steps. Click and move vials from the shelf to the cauldron. Click and move the crystal to finish the potion.
+- When players get the recipe correct, they proceed to Level 2, and eventually Level 3.
 - Visual Feedback: The cauldron glows when a user "picks up" a vial or crystal, indicating the drop zone. Incorrectly matched vials provide visual feedback once the user runs out of time or completes the incorrect order (fail state / win state).
-- Audio Experience: Medieval-themed background music evokes escapism, intrigue, and pressure, playing on an infinite loop during gameplay.
+- Audio Experience: Medieval-themed background music evokes escapism, intrigue, and pressure, playing on an infinite loop during gameplay. The audio speeds up as the timer decreases to add intensity. Sound effects for actions were added for immersion.
 
 ---
 
@@ -37,18 +44,11 @@ The design is inspired by the artistic, hand-drawn, medieval art style of Potion
 
 Three changes made based on playtesting:
 
-1. Evoke Frustration & Increase Complexity of Level One: Improve game theme of dyslexia by promoting immediate frustration and cognitive load. Specific action items include: increasing the number of vials on the shelf from 5 to 12; utilizing a cursive, script font that is difficult to decode; and adding a time limit to mirror real-life, time-dependent circumstances.
-2. Implement Clearer User Feedback Systems: Add hover states to all objects to increase tactility and intuitive interactions (e.g. elevate ingredient vials and crystal when hovered upon, add a subtle glow to the cauldron's top to indicate direct "dropping" zone).
-3. Implement Click-to-Move: To add ingredients to the cauldron, players click on an ingredient and move it to the cauldron’s mouth (without holding the mouse down). This interaction was intentionally designed to support accessibility, as players with motor impairments may find holding and dragging difficult.
+1. New Mechanic: During playtesting, Professor Karen suggested that we introduce a mixing mechanic. We incorporated this in Levels 2 and 3, where players must mix at specific points in each recipe.To support this interaction, we implemented a “Mix Meter” that clearly indicates how long players need to stir. This mechanic makes potion-making feel more interactive.
 
----
+2. New Mechanic: Playtesting also revealed that we needed to add a third mechanic. In Level 3, the lights go out, forcing players to navigate the potion recipe using only their cursor as a candle. This limits visibility so that only a small portion of the recipe is revealed at a time. For the grand finale, we wanted to create a more immersive, high-stakes final brewing experience that tests everything the player has learned so far. This mechanic reflects how individuals with dyslexia often need to process text in smaller segments and hold information in working memory.
 
-## Post-Showcase
-
-Two planned improvements include:
-
-> Reducing the Complexity of Level One Recipe: Aim to include only 3 vials instead of 5.
-> Enhancing the Audio Experience: Edit background music so that it increases in intensity as customer patience depletes.
+3. Persistent Instructions: During playtesting, some players found the game confusing without guidance. To address this, we introduced a “?” button that allows players to access instructions at any time. This provides optional support without interrupting gameplay, helping balance accessibility with our goal of fostering empathy for dyslexia.
 
 ---
 
@@ -60,6 +60,9 @@ Two planned improvements include:
 > - `assets/audio/paper.mp3` [13]
 > - `assets/audio/glass-cling.mp3` [14]
 > - `assets/audio/stirring.mp3` [15]
+> - `assets/sound/correct.mp3` [16]
+> - `assets/sound/wrong.mp3` [17]
+> - `assets/sound/timeout.mp3` [18]
 > - `assets/background/blue-lvl.png` (original artwork)
 > - `assets/background/level-menu.png` (original artwork)
 > - `assets/background/map-icons-default.png` (original artwork)
@@ -150,3 +153,9 @@ Two planned improvements include:
 [14] Film special effects glass cling 02 [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-glass-cling-02-83793/
 
 [15] Film special effects stirring a cup of coffee [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-stirring-a-cup-of-coffee-193831/
+
+[16] DRAGON-STUDIO. Correct. Pixabay. https://pixabay.com/sound-effects/technology-correct-472358/
+
+[17] Lesiakower. Error / Mistake Sound Effect. Pixabay. https://pixabay.com/sound-effects/film-special-effects-error-mistake-sound-effect-incorrect-answer-437420/
+
+[18] DRAGON-STUDIO. Clocking Ticking SFX. Pixabay. https://pixabay.com/sound-effects/clock-ticking-sfx-467486/
