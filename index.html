@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e3a3a" />
+    <title>Potionary | A Game of Crafting</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="style.css" />
+    <!--Andreea added fonts manually from Google font library-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IM+Fell+English:ital@0;1&family=Manufacturing+Consent&family=Monsieur+La+Doulaise&family=Playpen+Sans:wght@100..800&family=VT323&family=Voces&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js"></script>
+    <!-- Background music (loops). We attempt autoplay and fall back to first user interaction if blocked. -->
+    <audio id="bg-music" src="assets/sound/medieval-music.mp3" loop></audio>
+    <!-- Stirring sound effect (played when user stirs the spoon) -->
+    <audio id="stirring-sound" src="assets/sound/stirring.mp3"></audio>
+    <!-- Crystal shine sound effect (played when picking up the crystal) -->
+    <audio
+      id="crystal-shine-sound"
+      src="assets/sound/crystal-shine.mp3"
+    ></audio>
+    <!-- Glass cling sound effect (played when picking up any potion vial) -->
+    <audio id="glass-cling-sound" src="assets/sound/glass-cling.mp3"></audio>
+    <!-- Liquid pouring sound effect (played when pouring a vial into the cauldron) -->
+    <audio
+      id="liquid-pouring-sound"
+      src="assets/sound/liquid-pouring.mp3"
+    ></audio>
+    <!-- Paper sound effect (played when recipe is opened or envelope is clicked) -->
+    <audio id="paper-sound" src="assets/sound/paper.mp3"></audio>
+    <!-- Page-flip sound effect (played when envelope is clicked) -->
+    <audio id="page-flip-sound" src="assets/sound/page-flip.mp3"></audio>
+    <!-- Result sounds -->
+    <audio id="correct-sound" src="assets/sound/correct.mp3"></audio>
+    <audio id="wrong-sound" src="assets/sound/wrong.mp3"></audio>
+    <audio id="timeout-sound" src="assets/sound/timeout.mp3"></audio>
+    <script>
+      (function () {
+        const bg = document.getElementById("bg-music");
+        if (!bg) return;
+        bg.volume = 0.25;
+
+        function tryPlay() {
+          bg.play().catch(() => {});
+          document.removeEventListener("click", tryPlay);
+          document.removeEventListener("keydown", tryPlay);
+        }
+
+        // Try immediately (may be blocked by browser autoplay policies)
+        tryPlay();
+
+        // If blocked, start on first user interaction
+        document.addEventListener("click", tryPlay, { once: true });
+        document.addEventListener("keydown", tryPlay, { once: true });
+
+        // Ensure looping across browsers: restart when the track ends
+        bg.addEventListener("ended", function () {
+          try {
+            bg.currentTime = 0;
+            bg.play().catch(() => {});
+          } catch (e) {
+            // ignore
+          }
+        });
+      })();
+    </script>
+    <!-- your existing files (order matters) -->
+    <script src="start.js"></script>
+    <script src="instructions.js"></script>
+    <script src="end.js"></script>
+    <script src="map.js"></script>
+    <script src="results.js"></script>
+    <script src="level.js"></script>
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
