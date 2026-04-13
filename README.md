@@ -55,11 +55,11 @@ Two planned improvements include:
 ## Assets
 
 > - `assets/audio/medieval-music.mp3` [9]
-> - `assets/audio/film-special-effects-pouring-liquid.mp3` [11]
-> - `assets/audio/film-special-effects-shine-11.mp3` [12]
-> - `assets/audio/film-special-effects-paper.mp3` [13]
-> - `assets/audio/film-special-effects-glass-cling-02.mp3` [14]
-> - `assets/audio/film-special-effects-stirring-coffee.mp3` [15]
+> - `assets/audio/liquid-pouring.mp3` [11]
+> - `assets/audio/crystal-shine.mp3` [12]
+> - `assets/audio/paper.mp3` [13]
+> - `assets/audio/glass-cling.mp3` [14]
+> - `assets/audio/stirring.mp3` [15]
 > - `assets/background/blue-lvl.png` (original artwork)
 > - `assets/background/level-menu.png` (original artwork)
 > - `assets/background/map-icons-default.png` (original artwork)
