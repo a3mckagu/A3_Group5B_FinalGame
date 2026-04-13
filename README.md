@@ -55,6 +55,11 @@ Two planned improvements include:
 ## Assets
 
 > - `assets/audio/medieval-music.mp3` [9]
+> - `assets/audio/film-special-effects-pouring-liquid.mp3` [11]
+> - `assets/audio/film-special-effects-shine-11.mp3` [12]
+> - `assets/audio/film-special-effects-paper.mp3` [13]
+> - `assets/audio/film-special-effects-glass-cling-02.mp3` [14]
+> - `assets/audio/film-special-effects-stirring-coffee.mp3` [15]
 > - `assets/background/blue-lvl.png` (original artwork)
 > - `assets/background/level-menu.png` (original artwork)
 > - `assets/background/map-icons-default.png` (original artwork)
@@ -135,3 +140,13 @@ Two planned improvements include:
 [9] Tunetank. 2025. Medieval Happy Music. Pixabay. Retrieved March 12, 2026 from https://pixabay.com/music/adventure-medieval-happy-music-412790/
 
 [10] Water Sort Puzzle. 2020. Mobile puzzle game listing on Apple App Store. https://apps.apple.com/us/app/magic-potion-sort-puzzle/id6755454821
+
+[11] Film special effects pouring liquid into the liquid [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-pouring-liquid-into-the-liquid-102174/
+
+[12] Film special effects shine 11 [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-shine-11-268907/
+
+[13] Film special effects paper [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-paper-245786/
+
+[14] Film special effects glass cling 02 [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-glass-cling-02-83793/
+
+[15] Film special effects stirring a cup of coffee [sound effect]. Pixabay. Accessed April 10, 2026. https://pixabay.com/sound-effects/film-special-effects-stirring-a-cup-of-coffee-193831/
